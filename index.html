@@ -1,0 +1,489 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Creative Digital Agency - We create stunning digital experiences that transform brands and drive growth.">
+    <meta name="keywords" content="digital agency, web design, branding, marketing, creative">
+    <title>Creative Digital Agency - Digital Experiences That Transform</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                Creative<span class="logo-dot">.</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav-links">
+                <a href="index.html" class="active" data-lang="nav_home">Home</a>
+                <a href="about.html" data-lang="nav_about">About</a>
+                <a href="services.html" data-lang="nav_services">Services</a>
+                <a href="portfolio.html" data-lang="nav_portfolio">Portfolio</a>
+                <a href="blog.html" data-lang="nav_blog">Blog</a>
+                <a href="contact.html" data-lang="nav_contact">Contact</a>
+            </nav>
+
+            <div class="nav-right">
+             <button id="language-toggle" class="language-btn" data-language-toggle aria-label="Toggle language">
+                       EN
+             </button>
+                <button class="theme-toggle" data-lang-aria="toggle_dark_mode" aria-label="Toggle dark mode">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/>
+                        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+                    </svg>
+                </button>
+
+                <a href="contact.html" class="btn btn-primary btn-sm desktop-only" data-lang="nav_getStarted">
+                    Get Started
+                </a>
+
+                <button class="hamburger" data-lang-aria="open_menu" aria-label="Toggle menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="nav-overlay"></div>
+    <nav class="mobile-nav-drawer">
+        <div class="mobile-nav-header">
+            <a href="index.html" class="mobile-logo">
+                Creative<span class="logo-dot">.</span>
+            </a>
+            <button class="mobile-nav-close" data-lang-aria="close_menu" aria-label="Close menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-nav-links">
+            <a href="index.html" class="active" data-lang="nav_home">Home</a>
+            <a href="about.html" data-lang="nav_about">About</a>
+            <a href="services.html" data-lang="nav_services">Services</a>
+            <a href="portfolio.html" data-lang="nav_portfolio">Portfolio</a>
+            <a href="blog.html" data-lang="nav_blog">Blog</a>
+            <a href="contact.html" data-lang="nav_contact">Contact</a>
+        </div>
+        <div class="mobile-nav-footer">
+            <a href="contact.html" class="btn btn-primary" data-lang="nav_getStarted">Get Started</a>
+            <button type="button" data-language-toggle class="language-btn language-btn-mobile">EN</button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg">
+                <div class="hero-bg-shape hero-bg-shape-1"></div>
+                <div class="hero-bg-shape hero-bg-shape-2"></div>
+                <div class="hero-bg-shape hero-bg-shape-3"></div>
+            </div>
+            
+            <div class="container">
+                <div class="hero-content" data-animate="fadeInUp">
+                    <h1><span data-lang="hero_title_part1">Digital Experiences That </span><span class="text-gradient" data-lang="hero_title_highlight">Transform</span><span data-lang="hero_title_part2"> Brands</span></h1>
+                    <p data-lang="hero_description">We craft innovative digital solutions that captivate audiences, drive engagement, and accelerate growth. Let's bring your vision to life.</p>
+                    <div class="hero-buttons">
+                        <a href="contact.html" class="btn btn-primary" data-lang="hero_btn_project">Start Your Project</a>
+                        <a href="portfolio.html" class="btn btn-secondary" data-lang="hero_btn_viewWork">View Our Work</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header" data-animate="fadeInUp">
+                    <h2 data-lang="services_title">Our Services</h2>
+                    <p data-lang="services_subtitle">We offer comprehensive digital solutions to help your brand thrive in the modern digital landscape.</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card" data-animate="fadeInUp">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h3 data-lang="service_webDesign">Web Design</h3>
+                        <p data-lang="service_webDesign_desc">Beautiful, responsive websites that engage visitors and convert them into customers.</p>
+                        <a href="services.html" class="btn-link" data-lang="service_learnMore"><span data-lang="service_learnMore">Learn More</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="service-card" data-animate="fadeInUp">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <h3 data-lang="service_branding">Branding</h3>
+                        <p data-lang="service_branding_desc">Strategic brand identity that communicates your values and resonates with your audience.</p>
+                        <a href="services.html" class="btn-link" data-lang="service_learnMore"><span data-lang="service_learnMore">Learn More</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="service-card" data-animate="fadeInUp">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M18 3a3 3 0 00-3 3v12a3 3 0 003 3 3 3 0 003-3 3 3 0 00-3-3H6a3 3 0 00-3 3 3 3 0 003 3 3 3 0 003-3V6a3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3h12a3 3 0 003-3 3 3 0 00-3-3z"/>
+                            </svg>
+                        </div>
+                        <h3 data-lang="service_marketing">Digital Marketing</h3>
+                        <p data-lang="service_marketing_desc">Data-driven campaigns that increase visibility, drive traffic, and boost conversions.</p>
+                        <a href="services.html" class="btn-link" data-lang="service_learnMore"><span data-lang="service_learnMore">Learn More</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="service-card" data-animate="fadeInUp">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 18.5A6.5 6.5 0 005.5 12v-1a1 1 0 012 0v1a4.5 4.5 0 009 0v-1a1 1 0 012 0v1a6.5 6.5 0 00-6.5 6.5zM21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 data-lang="service_seo">SEO Optimization</h3>
+                        <p data-lang="service_seo_desc">Strategic SEO that improves rankings and drives organic traffic to your website.</p>
+                        <a href="services.html" class="btn-link" data-lang="service_learnMore"><span data-lang="service_learnMore">Learn More</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="section section-dark">
+            <div class="container">
+                <div class="section-header" data-animate="fadeInUp">
+                    <h2 data-lang="portfolio_title">Our Work</h2>
+                    <p data-lang="portfolio_subtitle">Explore our latest projects and see how we've helped brands achieve their digital goals.</p>
+                </div>
+
+                <div class="portfolio-grid">
+                    <div class="portfolio-item" data-animate="scaleIn">
+                        <img src="assets/images/Gemini_Generated_Image_7v4gsl7v4gsl7v4g (3).png" alt="E-commerce Platform">
+                        <div class="portfolio-overlay">
+                            <h4>E-commerce Platform</h4>
+                            <span>Web Design</span>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-animate="scaleIn">
+                        <img src="assets/images/Gemini_Generated_Image_7v4gsl7v4gsl7v4g (2).png" alt="Brand Identity">
+                        <div class="portfolio-overlay">
+                            <h4>Brand Identity</h4>
+                            <span>Branding</span>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-animate="scaleIn">
+                        <img src="assets/images/Gemini_Generated_Image_7v4gsl7v4gsl7v4g (1).png" alt="Mobile App">
+                        <div class="portfolio-overlay">
+                            <h4>Mobile App</h4>
+                            <span>Development</span>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-animate="scaleIn">
+                        <img src="assets/images/Gemini_Generated_Image_7v4gsl7v4gsl7v4g (4).png" alt="Marketing Campaign">
+                        <div class="portfolio-overlay">
+                            <h4>Marketing Campaign</h4>
+                            <span>Marketing</span>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-animate="scaleIn">
+                        <img src="assets/images/Gemini_Generated_Image_7v4gsl7v4gsl7v4g (5).png" alt="Dashboard Design">
+                        <div class="portfolio-overlay">
+                            <h4>Dashboard Design</h4>
+                            <span>UI/UX</span>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-animate="scaleIn">
+                        <img src="assets/images/Gemini_Generated_Image_7v4gsl7v4gsl7v4g.png" alt="Social Media">
+                        <div class="portfolio-overlay">
+                            <h4>Social Media</h4>
+                            <span>Marketing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-4">
+                    <a href="portfolio.html" class="btn btn-outline" data-lang="portfolio_viewAll">View All Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header" data-animate="fadeInUp">
+                    <h2 data-lang="testimonials_title">What Clients Say</h2>
+                    <p data-lang="testimonials_subtitle">Don't just take our word for it. Here's what our clients have to say about working with us.</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card" data-animate="fadeInUp">
+                        <div class="testimonial-rating">
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                        <p class="testimonial-content">"Working with Creative Agency was an absolute pleasure. They understood our vision from day one and delivered a website that exceeded all our expectations."</p>
+                        <div class="testimonial-author">
+                            <img src="assets/images/Gemini_Generated_Image_7v4gsl7v4gsl7v4g (1).png" alt="Sarah Johnson">
+                            <div>
+                                <h5>Sarah Johnson</h5>
+                                <span>CEO, TechStart Inc.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card" data-animate="fadeInUp">
+                        <div class="testimonial-rating">
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                        <p class="testimonial-content">"The team's attention to detail and creative approach helped us stand out in a crowded market. Our brand visibility increased by 300%!"</p>
+                        <div class="testimonial-author">
+                            <img src="assets/images/Gemini_Generated_Image_7v4gsl7v4gsl7v4g (2).png" alt="Michael Chen">
+                            <div>
+                                <h5>Michael Chen</h5>
+                                <span>Founder, GreenLife</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card" data-animate="fadeInUp">
+                        <div class="testimonial-rating">
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                        <p class="testimonial-content">"Professional, creative, and results-driven. The marketing campaign they created generated a 150% ROI within the first quarter."</p>
+                        <div class="testimonial-author">
+                            <img src="assets/images/Gemini_Generated_Image_7v4gsl7v4gsl7v4g.png" alt="Emily Davis">
+                            <div>
+                                <h5>Emily Davis</h5>
+                                <span>Marketing Director, StyleHub</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="section section-dark">
+            <div class="container">
+                <div class="section-header" data-animate="fadeInUp">
+                    <h2 data-lang="team_title">Meet Our Team</h2>
+                    <p data-lang="team_subtitle">Passionate creatives, strategists, and developers working together to bring your vision to life.</p>
+                </div>
+
+                <div class="team-grid">
+                    <div class="team-member" data-animate="fadeInUp">
+                        <div class="team-image">
+                            <img src="assets/images/Gemini_Generated_Image_7v4gsl7v4gsl7v4g (3).png" alt="Alex Rivera">
+                            <div class="team-social">
+                                <a href="#"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+                                <a href="#"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg></a>
+                            </div>
+                        </div>
+                        <h4>Alex Rivera</h4>
+                        <span>Creative Director</span>
+                    </div>
+
+                    <div class="team-member" data-animate="fadeInUp">
+                        <div class="team-image">
+                            <img src="assets/images/Gemini_Generated_Image_7v4gsl7v4gsl7v4g (1).png" alt="Maya Patel">
+                            <div class="team-social">
+                                <a href="#"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+                                <a href="#"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg></a>
+                            </div>
+                        </div>
+                        <h4>Maya Patel</h4>
+                        <span>Lead Designer</span>
+                    </div>
+
+                    <div class="team-member" data-animate="fadeInUp">
+                        <div class="team-image">
+                            <img src="assets/images/Gemini_Generated_Image_7v4gsl7v4gsl7v4g (5).png" alt="James Wilson">
+                            <div class="team-social">
+                                <a href="#"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+                                <a href="#"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg></a>
+                            </div>
+                        </div>
+                        <h4>James Wilson</h4>
+                        <span>Senior Developer</span>
+                    </div>
+
+                    <div class="team-member" data-animate="fadeInUp">
+                        <div class="team-image">
+                            <img src="assets/images/Gemini_Generated_Image_7v4gsl7v4gsl7v4g.png" alt="Sofia Martinez">
+                            <div class="team-social">
+                                <a href="#"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+                                <a href="#"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg></a>
+                            </div>
+                        </div>
+                        <h4>Sofia Martinez</h4>
+                        <span>Marketing Strategist</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item" data-animate="fadeInUp">
+                        <div class="stat-number" data-target="250" data-duration="2000">0</div>
+                        <div class="stat-label" data-lang="stats_projects">Projects Completed</div>
+                    </div>
+                    <div class="stat-item" data-animate="fadeInUp">
+                        <div class="stat-number" data-target="50" data-duration="2000">0</div>
+                        <div class="stat-label" data-lang="stats_clients">Happy Clients</div>
+                    </div>
+                    <div class="stat-item" data-animate="fadeInUp">
+                        <div class="stat-number" data-target="15" data-duration="2000">0</div>
+                        <div class="stat-label" data-lang="stats_team">Team Members</div>
+                    </div>
+                    <div class="stat-item" data-animate="fadeInUp">
+                        <div class="stat-number" data-target="10" data-duration="2000">0</div>
+                        <div class="stat-label" data-lang="stats_experience">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section">
+            <div class="container">
+                <div class="cta-section" data-animate="scaleIn">
+                    <h2 data-lang="cta_project">Ready to Start Your Project?</h2>
+                    <p data-lang="cta_project_desc">Let's work together to create something amazing. Get in touch and let's discuss your next big idea.</p>
+                    <a href="contact.html" class="btn" data-lang="cta_project_btn">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>Creative<span style="color: var(--primary-color);">.</span></h3>
+                    <p data-lang="footer_about">We're a passionate team of designers, developers, and strategists dedicated to creating exceptional digital experiences that drive results.</p>
+                    <div class="footer-social">
+                        <a href="#"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+                        <a href="#"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg></a>
+                        <a href="#"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+                        <a href="#"><svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 data-lang="footer_quickLinks">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html" data-lang="footer_home">Home</a></li>
+                        <li><a href="about.html" data-lang="footer_aboutUs">About Us</a></li>
+                        <li><a href="services.html" data-lang="nav_services">Services</a></li>
+                        <li><a href="portfolio.html" data-lang="nav_portfolio">Portfolio</a></li>
+                        <li><a href="blog.html" data-lang="nav_blog">Blog</a></li>
+                        <li><a href="contact.html" data-lang="nav_contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 data-lang="footer_services">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html" data-lang="service_webDesign_title">Web Design</a></li>
+                        <li><a href="services.html" data-lang="service_branding_title">Branding</a></li>
+                        <li><a href="services.html" data-lang="service_marketing_title">Marketing</a></li>
+                        <li><a href="services.html" data-lang="service_seo_title">SEO</a></li>
+                        <li><a href="services.html" data-lang="service_mobileApps_title">Mobile Apps</a></li>
+                        <li><a href="services.html" data-lang="service_uiux_title">UI/UX</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 data-lang="footer_contactInfo">Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span><span data-lang="footer_address">123 Creative Street</span><br><span data-lang="footer_address2">San Francisco, CA 94102</span></span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+                            <span>hello@creativeagency.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p data-lang="footer_copyright">&copy; 2024 Creative Digital Agency. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" data-lang-aria="scroll_top" aria-label="Scroll to top">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+        </svg>
+    </button>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/darkmode.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/language.js"></script>
+</body>
+</html>

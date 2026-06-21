@@ -1,0 +1,490 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Creative Digital Agency - our story, mission, values, and the passionate team behind our digital solutions.">
+    <meta name="keywords" content="about us, creative agency, digital agency, our team, company story">
+    <title>About Us - Creative Digital Agency</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/hero-sections.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                Creative<span class="logo-dot">.</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav-links">
+                <a href="index.html" data-lang="nav_home">Home</a>
+                <a href="about.html" class="active" data-lang="nav_about">About</a>
+                <a href="services.html" data-lang="nav_services">Services</a>
+                <a href="portfolio.html" data-lang="nav_portfolio">Portfolio</a>
+                <a href="blog.html" data-lang="nav_blog">Blog</a>
+                <a href="contact.html" data-lang="nav_contact">Contact</a>
+            </nav>
+
+            <div class="nav-right">
+              <button id="language-toggle" class="language-btn" data-language-toggle aria-label="Toggle language">
+                        EN
+              </button>
+                <button class="theme-toggle" data-lang-aria="toggle_dark_mode" aria-label="Toggle dark mode">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/>
+                        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+                    </svg>
+                </button>
+
+                <a href="contact.html" class="btn btn-primary btn-sm desktop-only" data-lang="nav_getStarted">
+                    Get Started
+                </a>
+
+                <button class="hamburger" data-lang-aria="open_menu" aria-label="Toggle menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="nav-overlay"></div>
+    <nav class="mobile-nav-drawer">
+        <div class="mobile-nav-header">
+            <a href="index.html" class="mobile-logo">
+                Creative<span class="logo-dot">.</span>
+            </a>
+            <button class="mobile-nav-close" data-lang-aria="close_menu" aria-label="Close menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-nav-links">
+            <a href="index.html" data-lang="nav_home">Home</a>
+            <a href="about.html" class="active" data-lang="nav_about">About</a>
+            <a href="services.html" data-lang="nav_services">Services</a>
+            <a href="portfolio.html" data-lang="nav_portfolio">Portfolio</a>
+            <a href="blog.html" data-lang="nav_blog">Blog</a>
+            <a href="contact.html" data-lang="nav_contact">Contact</a>
+        </div>
+        <div class="mobile-nav-footer">
+            <a href="contact.html" class="btn btn-primary" data-lang="nav_getStarted">Get Started</a>
+            <button type="button" data-language-toggle class="language-btn language-btn-mobile">EN</button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Page Hero - About: Split Layout with Stats & Team Cards -->
+        <section class="page-hero hero-about">
+            <div class="hero-bg-gradient"></div>
+            <div class="hero-bg-grid"></div>
+            <div class="hero-floating-shapes">
+                <div class="floating-shape shape-circle"></div>
+                <div class="floating-shape shape-square"></div>
+                <div class="floating-shape shape-blob"></div>
+            </div>
+
+            <div class="container">
+                <div class="hero-about-wrapper">
+                    <div class="hero-about-content">
+                        <span class="hero-badge" data-animate="fadeInUp">
+                            <span class="hero-badge-dot"></span>
+                            <span data-lang="about_hero_badge">Who We Are</span>
+                        </span>
+                        <h1 class="hero-about-title" data-animate="fadeInUp">
+                            <span data-lang="about_hero_title1">Crafting Digital Stories</span>
+                            <span class="title-gradient" data-lang="about_hero_title2">That Move People</span>
+                        </h1>
+                        <p class="hero-about-subtitle" data-animate="fadeInUp" data-lang="about_hero_subtitle">
+                            A decade of turning bold ideas into measurable outcomes. We're a 50+ team of designers, engineers, and storytellers building the future of digital brands.
+                        </p>
+                        <div class="hero-about-cta" data-animate="fadeInUp">
+                            <a href="contact.html" class="btn btn-primary btn-glow" data-lang="about_hero_cta1">Start a Conversation</a>
+                            <a href="#our-story" class="btn-link btn-link-light" data-lang="about_hero_cta2">
+                                Read Our Story
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="hero-about-stats" data-animate="fadeInUp">
+                            <div class="hero-stat">
+                                <div class="hero-stat-number">10+</div>
+                                <div class="hero-stat-label" data-lang="about_stat_years">Years of Impact</div>
+                            </div>
+                            <div class="hero-stat-divider"></div>
+                            <div class="hero-stat">
+                                <div class="hero-stat-number">50+</div>
+                                <div class="hero-stat-label" data-lang="about_stat_team">Team Members</div>
+                            </div>
+                            <div class="hero-stat-divider"></div>
+                            <div class="hero-stat">
+                                <div class="hero-stat-number">250+</div>
+                                <div class="hero-stat-label" data-lang="about_stat_projects">Projects Delivered</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-about-visual" data-animate="fadeInRight">
+                        <div class="team-card team-card-1">
+                            <div class="team-card-avatar">AR</div>
+                            <div class="team-card-info">
+                                <div class="team-card-name">Alex Rivera</div>
+                                <div class="team-card-role">Creative Director</div>
+                            </div>
+                            <div class="team-card-pulse"></div>
+                        </div>
+                        <div class="team-card team-card-2">
+                            <div class="team-card-avatar">MP</div>
+                            <div class="team-card-info">
+                                <div class="team-card-name">Maya Patel</div>
+                                <div class="team-card-role">Lead Designer</div>
+                            </div>
+                            <div class="team-card-pulse"></div>
+                        </div>
+                        <div class="team-card team-card-3">
+                            <div class="team-card-avatar">JW</div>
+                            <div class="team-card-info">
+                                <div class="team-card-name">James Wilson</div>
+                                <div class="team-card-role">Senior Developer</div>
+                            </div>
+                            <div class="team-card-pulse"></div>
+                        </div>
+                        <div class="hero-glow-orb"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story Section -->
+        <section class="section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-image" data-animate="fadeInLeft">
+                        <img src="/assets/images/Gemini_Generated_Image_7v4gsl7v4gsl7v4g (3).png" alt="Our creative workspace">
+                    </div>
+                    <div class="about-text" data-animate="fadeInRight">
+                        <h2 data-lang="about_story">Our Story</h2>
+                        <p data-lang="about_story_p1">Founded in 2014, Creative Digital Agency started with a simple mission: to help businesses thrive in the digital age. What began as a small team of three passionate designers has grown into a full-service digital agency with over 50 clients worldwide.</p>
+                        <p data-lang="about_story_p2">We've always believed that great design is about more than aesthetics—it's about solving problems, telling stories, and creating meaningful connections between brands and their audiences.</p>
+                        <p data-lang="about_story_p3">Today, we combine strategic thinking with creative execution to deliver digital experiences that not only look beautiful but also drive real business results. From startups to Fortune 500 companies, we've helped organizations across industries transform their digital presence.</p>
+                        <a href="contact.html" class="btn btn-primary" data-lang="about_workWithUs">Work With Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission & Values -->
+        <section class="section section-dark">
+            <div class="container">
+                <div class="section-header" data-animate="fadeInUp">
+                    <h2 data-lang="about_mission">Our Mission & Values</h2>
+                    <p data-lang="about_mission_subtitle">The principles that guide everything we do and every decision we make.</p>
+                </div>
+
+                <div class="values-grid">
+                    <div class="value-item" data-animate="fadeInUp">
+                        <div class="value-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h3 data-lang="about_value_innovation">Innovation</h3>
+                        <p data-lang="about_value_innovation_desc">We push boundaries and challenge conventions to deliver cutting-edge solutions that keep our clients ahead of the curve.</p>
+                    </div>
+
+                    <div class="value-item" data-animate="fadeInUp">
+                        <div class="value-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                        </div>
+                        <h3 data-lang="about_value_integrity">Integrity</h3>
+                        <p data-lang="about_value_integrity_desc">We believe in transparency, honesty, and building trust through every interaction and deliverable.</p>
+                    </div>
+
+                    <div class="value-item" data-animate="fadeInUp">
+                        <div class="value-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+                            </svg>
+                        </div>
+                        <h3 data-lang="about_value_collaboration">Collaboration</h3>
+                        <p data-lang="about_value_collaboration_desc">We work closely with our clients as partners, ensuring their vision remains at the heart of every project.</p>
+                    </div>
+
+                    <div class="value-item" data-animate="fadeInUp">
+                        <div class="value-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                <path d="M22 4L12 14.01l-3-3"/>
+                            </svg>
+                        </div>
+                        <h3 data-lang="about_value_excellence">Excellence</h3>
+                        <p data-lang="about_value_excellence_desc">We strive for perfection in everything we do, never settling for good enough when great is possible.</p>
+                    </div>
+
+                    <div class="value-item" data-animate="fadeInUp">
+                        <div class="value-icon">
+                            <svg viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                        </div>
+                        <h3 data-lang="about_value_efficiency">Efficiency</h3>
+                        <p data-lang="about_value_efficiency_desc">We value your time and resources, delivering high-quality work on schedule without compromising on quality.</p>
+                    </div>
+
+                    <div class="value-item" data-animate="fadeInUp">
+                        <div class="value-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                            </svg>
+                        </div>
+                        <h3 data-lang="about_value_passion">Passion</h3>
+                        <p data-lang="about_value_passion_desc">We genuinely love what we do, and that enthusiasm shines through in our work and client relationships.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header" data-animate="fadeInUp">
+                    <h2 data-lang="about_team_title">Meet Our Team</h2>
+                    <p data-lang="about_team_subtitle">The talented individuals who bring your visions to life every day.</p>
+                </div>
+
+                <div class="team-grid">
+                    <div class="team-member" data-animate="fadeInUp">
+                        <div class="team-image">
+                            <img src="assets/images/Gemini_Generated_Image_7v4gsl7v4gsl7v4g (1).png" alt="Alex Rivera">
+                            <div class="team-social">
+                                <a href="#"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+                                <a href="#"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg></a>
+                            </div>
+                        </div>
+                        <h4>Alex Rivera</h4>
+                        <span>Creative Director</span>
+                    </div>
+
+                    <div class="team-member" data-animate="fadeInUp">
+                        <div class="team-image">
+                            <img src="assets/images/Gemini_Generated_Image_7v4gsl7v4gsl7v4g (2).png" alt="Maya Patel">
+                            <div class="team-social">
+                                <a href="#"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+                                <a href="#"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg></a>
+                            </div>
+                        </div>
+                        <h4>Maya Patel</h4>
+                        <span>Lead Designer</span>
+                    </div>
+
+                    <div class="team-member" data-animate="fadeInUp">
+                        <div class="team-image">
+                            <img src="assets/images/Gemini_Generated_Image_7v4gsl7v4gsl7v4g (3).png" alt="James Wilson">
+                            <div class="team-social">
+                                <a href="#"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+                                <a href="#"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg></a>
+                            </div>
+                        </div>
+                        <h4>James Wilson</h4>
+                        <span>Senior Developer</span>
+                    </div>
+
+                    <div class="team-member" data-animate="fadeInUp">
+                        <div class="team-image">
+                            <img src="assets/images/Gemini_Generated_Image_7v4gsl7v4gsl7v4g (4).png" alt="Sofia Martinez">
+                            <div class="team-social">
+                                <a href="#"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+                                <a href="#"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg></a>
+                            </div>
+                        </div>
+                        <h4>Sofia Martinez</h4>
+                        <span>Marketing Strategist</span>
+                    </div>
+
+                    <div class="team-member" data-animate="fadeInUp">
+                        <div class="team-image">
+                            <img src="assets/images/Gemini_Generated_Image_7v4gsl7v4gsl7v4g (5).png" alt="David Kim">
+                            <div class="team-social">
+                                <a href="#"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+                                <a href="#"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg></a>
+                            </div>
+                        </div>
+                        <h4>David Kim</h4>
+                        <span>UX Designer</span>
+                    </div>
+
+                    <div class="team-member" data-animate="fadeInUp">
+                        <div class="team-image">
+                            <img src="assets/images/Gemini_Generated_Image_7v4gsl7v4gsl7v4g.png" alt="Emma Thompson">
+                            <div class="team-social">
+                                <a href="#"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+                                <a href="#"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg></a>
+                            </div>
+                        </div>
+                        <h4>Emma Thompson</h4>
+                        <span>Project Manager</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="section section-dark">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item" data-animate="fadeInUp">
+                        <div class="stat-number" data-target="250" data-duration="2000">0</div>
+                        <div class="stat-label" data-lang="stats_projects">Projects Completed</div>
+                    </div>
+                    <div class="stat-item" data-animate="fadeInUp">
+                        <div class="stat-number" data-target="50" data-duration="2000">0</div>
+                        <div class="stat-label" data-lang="stats_clients">Happy Clients</div>
+                    </div>
+                    <div class="stat-item" data-animate="fadeInUp">
+                        <div class="stat-number" data-target="15" data-duration="2000">0</div>
+                        <div class="stat-label" data-lang="stats_team">Team Members</div>
+                    </div>
+                    <div class="stat-item" data-animate="fadeInUp">
+                        <div class="stat-number" data-target="10" data-duration="2000">0</div>
+                        <div class="stat-label" data-lang="stats_experience">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header" data-animate="fadeInUp">
+                    <h2 data-lang="about_trusted">Trusted By</h2>
+                    <p data-lang="about_trusted_subtitle">We're proud to work with some of the world's leading brands.</p>
+                </div>
+
+                <div class="partners-grid" data-animate="fadeInUp">
+                    <img src="assets/images/Gemini_Generated_Image_2am5qk2am5qk2am5.png" alt="Partner 1" class="partner-logo">
+                    <img src="assets/images/Gemini_Generated_Image_3y6it63y6it63y6i.png" alt="Partner 2" class="partner-logo">
+                    <img src="assets/images/Gemini_Generated_Image_e980p0e980p0e980.png" alt="Partner 3" class="partner-logo">
+                    <img src="assets/images/Gemini_Generated_Image_gkxbfgkxbfgkxbfg.png" alt="Partner 4" class="partner-logo">
+                    <img src="assets/images/Gemini_Generated_Image_7v4gsl7v4gsl7v4g (1).png" alt="Partner 5" class="partner-logo">
+                    <img src="assets/images/Gemini_Generated_Image_7v4gsl7v4gsl7v4g (2).png" alt="Partner 6" class="partner-logo">
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section">
+            <div class="container">
+                <div class="cta-section" data-animate="scaleIn">
+                    <h2 data-lang="cta_team">Want to Join Our Team?</h2>
+                    <p data-lang="cta_team_desc">We're always looking for talented individuals who share our passion for creating exceptional digital experiences.</p>
+                    <a href="contact.html" class="btn" data-lang="cta_team_btn">View Open Positions</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>Creative<span style="color: var(--primary-color);">.</span></h3>
+                    <p><span data-lang="footer_about">We're a passionate team of designers, developers, and strategists dedicated to creating exceptional digital experiences that drive results.</span></p>
+                    <div class="footer-social">
+                        <a href="#"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+                        <a href="#"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg></a>
+                        <a href="#"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+                        <a href="#"><svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 data-lang="footer_quickLinks">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><span data-lang="footer_home">Home</span></a></li>
+                        <li><a href="about.html"><span data-lang="footer_aboutUs">About Us</span></a></li>
+                        <li><a href="services.html"><span data-lang="nav_services">Services</span></a></li>
+                        <li><a href="portfolio.html"><span data-lang="nav_portfolio">Portfolio</span></a></li>
+                        <li><a href="blog.html"><span data-lang="nav_blog">Blog</span></a></li>
+                        <li><a href="contact.html"><span data-lang="nav_contact">Contact</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 data-lang="footer_services">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html"><span data-lang="service_webDesign_title">Web Design</span></a></li>
+                        <li><a href="services.html"><span data-lang="service_branding_title">Branding</span></a></li>
+                        <li><a href="services.html"><span data-lang="service_marketing_title">Marketing</span></a></li>
+                        <li><a href="services.html"><span data-lang="service_seo_title">SEO</span></a></li>
+                        <li><a href="services.html"><span data-lang="service_mobileApps_title">Mobile Apps</span></a></li>
+                        <li><a href="services.html"><span data-lang="service_uiux_title">UI/UX</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 data-lang="footer_contactInfo">Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span><span data-lang="footer_address">123 Creative Street</span><br><span data-lang="footer_address2">San Francisco, CA 94102</span></span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+                            <span>hello@creativeagency.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p><span data-lang="footer_copyright">&copy; 2024 Creative Digital Agency. All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" data-lang-aria="scroll_top" aria-label="Scroll to top">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+        </svg>
+    </button>
+
+    <!-- Scripts -->
+    <script src="assets/js/language.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/darkmode.js"></script>
+    <script src="assets/js/animations.js"></script>
+</body>
+</html>

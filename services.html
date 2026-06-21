@@ -1,0 +1,627 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Our digital services - Web Design, Branding, Marketing, SEO, Mobile Apps, UI/UX Design, Content Strategy, and Social Media Management.">
+    <meta name="keywords" content="web design, branding, marketing, SEO, mobile apps, UI UX design, digital services">
+    <title>Services - Creative Digital Agency</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/hero-sections.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                Creative<span class="logo-dot">.</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav-links">
+                <a href="index.html" data-lang="nav_home">Home</a>
+                <a href="about.html" data-lang="nav_about">About</a>
+                <a href="services.html" class="active" data-lang="nav_services">Services</a>
+                <a href="portfolio.html" data-lang="nav_portfolio">Portfolio</a>
+                <a href="blog.html" data-lang="nav_blog">Blog</a>
+                <a href="contact.html" data-lang="nav_contact">Contact</a>
+            </nav>
+
+            <div class="nav-right">
+              <button id="language-toggle" class="language-btn" data-language-toggle aria-label="Toggle language">
+                        EN
+              </button>
+                <button class="theme-toggle" data-lang-aria="toggle_dark_mode" aria-label="Toggle dark mode">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/>
+                        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+                    </svg>
+                </button>
+
+                <a href="contact.html" class="btn btn-primary btn-sm desktop-only" data-lang="nav_getStarted">
+                    Get Started
+                </a>
+
+                <button class="hamburger" data-lang-aria="open_menu" aria-label="Toggle menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="nav-overlay"></div>
+    <nav class="mobile-nav-drawer">
+        <div class="mobile-nav-header">
+            <a href="index.html" class="mobile-logo">
+                Creative<span class="logo-dot">.</span>
+            </a>
+            <button class="mobile-nav-close" data-lang-aria="close_menu" aria-label="Close menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-nav-links">
+            <a href="index.html" data-lang="nav_home">Home</a>
+            <a href="about.html" data-lang="nav_about">About</a>
+            <a href="services.html" class="active" data-lang="nav_services">Services</a>
+            <a href="portfolio.html" data-lang="nav_portfolio">Portfolio</a>
+            <a href="blog.html" data-lang="nav_blog">Blog</a>
+            <a href="contact.html" data-lang="nav_contact">Contact</a>
+        </div>
+        <div class="mobile-nav-footer">
+            <a href="contact.html" class="btn btn-primary" data-lang="nav_getStarted"><span data-lang="pricing_getStarted">Get Started</span></a>
+            <button type="button" data-language-toggle class="language-btn language-btn-mobile">EN</button>
+        </div>
+    </nav>
+
+
+    <main>
+        <!-- Page Hero - Services: Centered with Orbiting Service Icons -->
+        <section class="page-hero hero-services">
+            <div class="hero-bg-mesh"></div>
+            <div class="hero-bg-orb hero-bg-orb-1"></div>
+            <div class="hero-bg-orb hero-bg-orb-2"></div>
+            <div class="hero-bg-orb hero-bg-orb-3"></div>
+
+            <div class="container">
+                <div class="hero-services-wrapper">
+                    <div class="hero-services-orbit" data-animate="scaleIn">
+                        <div class="orbit-core">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <div class="orbit-ring orbit-ring-1"></div>
+                        <div class="orbit-ring orbit-ring-2"></div>
+                        <div class="orbit-item orbit-item-1">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 18.5A6.5 6.5 0 005.5 12v-1a1 1 0 012 0v1a4.5 4.5 0 009 0v-1a1 1 0 012 0v1a6.5 6.5 0 00-6.5 6.5zM21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <div class="orbit-item orbit-item-2">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/>
+                            </svg>
+                        </div>
+                        <div class="orbit-item orbit-item-3">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div class="orbit-item orbit-item-4">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
+                        </div>
+                        <div class="orbit-item orbit-item-5">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 3a3 3 0 00-3 3v12a3 3 0 003 3 3 3 0 003-3 3 3 0 00-3-3H6a3 3 0 00-3 3 3 3 0 003 3 3 3 0 003-3V6a3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3h12a3 3 0 003-3 3 3 0 00-3-3z"/>
+                            </svg>
+                        </div>
+                        <div class="orbit-item orbit-item-6">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="hero-services-content">
+                        <span class="hero-badge hero-badge-light" data-animate="fadeInUp">
+                            <span class="hero-badge-dot"></span>
+                            <span data-lang="services_hero_badge">What We Do</span>
+                        </span>
+                        <h1 class="hero-services-title" data-animate="fadeInUp">
+                            <span data-lang="services_hero_title1">Services Built for</span>
+                            <span class="title-gradient" data-lang="services_hero_title2">Bold Brands</span>
+                        </h1>
+                        <p class="hero-services-subtitle" data-animate="fadeInUp" data-lang="services_hero_subtitle">
+                            From strategy to ship â€” full-stack digital services that scale with your ambition and turn complex challenges into elegant experiences.
+                        </p>
+                        <div class="hero-services-cta" data-animate="fadeInUp">
+                            <a href="#services-grid" class="btn btn-primary btn-glow" data-lang="services_hero_cta1">Explore Services</a>
+                            <a href="contact.html" class="btn btn-outline btn-outline-light" data-lang="services_hero_cta2">Get Custom Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <section class="section">
+            <div class="container">
+                <div class="services-grid">
+                    <div class="service-card" data-animate="fadeInUp">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h3 data-lang="service_webDesign">Web Design</h3>
+                        <p>Beautiful, responsive websites that engage visitors and drive conversions. We create user-centric designs that reflect your brand identity and achieve your business goals.</p>
+                        <ul style="margin-top: 15px; color: var(--text-secondary);">
+                            <li style="margin-bottom: 8px;">Custom Website Design</li>
+                            <li style="margin-bottom: 8px;">Responsive Development</li>
+                            <li style="margin-bottom: 8px;">E-commerce Solutions</li>
+                            <li>CMS Integration</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card" data-animate="fadeInUp">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <h3 data-lang="service_branding">Branding</h3>
+                        <p>Strategic brand identity that communicates your values and resonates with your target audience. We build brands that stand the test of time.</p>
+                        <ul style="margin-top: 15px; color: var(--text-secondary);">
+                            <li style="margin-bottom: 8px;">Logo Design</li>
+                            <li style="margin-bottom: 8px;">Brand Guidelines</li>
+                            <li style="margin-bottom: 8px;">Visual Identity</li>
+                            <li>Brand Strategy</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card" data-animate="fadeInUp">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M18 3a3 3 0 00-3 3v12a3 3 0 003 3 3 3 0 003-3 3 3 0 00-3-3H6a3 3 0 00-3 3 3 3 0 003 3 3 3 0 003-3V6a3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3h12a3 3 0 003-3 3 3 0 00-3-3z"/>
+                            </svg>
+                        </div>
+                        <h3 data-lang="service_marketing">Digital Marketing</h3>
+                        <p>Data-driven campaigns that increase visibility, drive traffic, and boost conversions. We create marketing strategies that deliver measurable results.</p>
+                        <ul style="margin-top: 15px; color: var(--text-secondary);">
+                            <li style="margin-bottom: 8px;">PPC Advertising</li>
+                            <li style="margin-bottom: 8px;">Email Marketing</li>
+                            <li style="margin-bottom: 8px;">Content Marketing</li>
+                            <li>Analytics & Reporting</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card" data-animate="fadeInUp">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 18.5A6.5 6.5 0 005.5 12v-1a1 1 0 012 0v1a4.5 4.5 0 009 0v-1a1 1 0 012 0v1a6.5 6.5 0 00-6.5 6.5zM21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 data-lang="service_seo">SEO Optimization</h3>
+                        <p>Strategic SEO that improves rankings and drives organic traffic to your website. We help you get found by the right audience at the right time.</p>
+                        <ul style="margin-top: 15px; color: var(--text-secondary);">
+                            <li style="margin-bottom: 8px;">Keyword Research</li>
+                            <li style="margin-bottom: 8px;">On-Page SEO</li>
+                            <li style="margin-bottom: 8px;">Link Building</li>
+                            <li>Technical SEO</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card" data-animate="fadeInUp">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24">
+                                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                                <path d="M12 18h.01"/>
+                            </svg>
+                        </div>
+                        <h3 data-lang="service_mobileApps">Mobile Apps</h3>
+                        <p>Native and cross-platform mobile applications that deliver exceptional user experiences. We build apps that users love and businesses depend on.</p>
+                        <ul style="margin-top: 15px; color: var(--text-secondary);">
+                            <li style="margin-bottom: 8px;">iOS Development</li>
+                            <li style="margin-bottom: 8px;">Android Development</li>
+                            <li style="margin-bottom: 8px;">React Native</li>
+                            <li>App Store Optimization</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card" data-animate="fadeInUp">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 3h7a2 2 0 012 2v14a2 2 0 01-2 2h-7m0-18H5a2 2 0 00-2 2v14a2 2 0 002 2h7m0-18v18"/>
+                            </svg>
+                        </div>
+                        <h3 data-lang="service_uiux">UI/UX Design</h3>
+                        <p>User-centered design that creates intuitive, engaging digital experiences. We focus on usability, accessibility, and visual appeal.</p>
+                        <ul style="margin-top: 15px; color: var(--text-secondary);">
+                            <li style="margin-bottom: 8px;">User Research</li>
+                            <li style="margin-bottom: 8px;">Wireframing</li>
+                            <li style="margin-bottom: 8px;">Prototyping</li>
+                            <li>Usability Testing</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card" data-animate="fadeInUp">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                                <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/>
+                            </svg>
+                        </div>
+                        <h3 data-lang="service_content">Content Strategy</h3>
+                        <p>Compelling content that tells your story and connects with your audience. We create content that educates, entertains, and converts.</p>
+                        <ul style="margin-top: 15px; color: var(--text-secondary);">
+                            <li style="margin-bottom: 8px;">Content Planning</li>
+                            <li style="margin-bottom: 8px;">Copywriting</li>
+                            <li style="margin-bottom: 8px;">Blog Management</li>
+                            <li>Video Production</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card" data-animate="fadeInUp">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+                            </svg>
+                        </div>
+                        <h3 data-lang="service_social">Social Media</h3>
+                        <p>Strategic social media management that builds communities and drives engagement. We help you connect with your audience on the platforms that matter.</p>
+                        <ul style="margin-top: 15px; color: var(--text-secondary);">
+                            <li style="margin-bottom: 8px;">Platform Strategy</li>
+                            <li style="margin-bottom: 8px;">Content Creation</li>
+                            <li style="margin-bottom: 8px;">Community Management</li>
+                            <li>Influencer Marketing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="section section-dark">
+            <div class="container">
+                <div class="section-header" data-animate="fadeInUp">
+                    <h2 data-lang="services_process">Our Process</h2>
+                    <p data-lang="services_process_subtitle">A systematic approach that ensures quality results and client satisfaction at every stage.</p>
+                </div>
+
+                <div class="process-grid">
+                    <div class="process-item" data-animate="fadeInUp">
+                        <div class="process-number">01</div>
+                        <h4 data-lang="process_discovery">Discovery</h4>
+                        <p>We start by understanding your business, goals, and target audience through in-depth research and consultation.</p>
+                    </div>
+
+                    <div class="process-item" data-animate="fadeInUp">
+                        <div class="process-number">02</div>
+                        <h4 data-lang="process_strategy">Strategy</h4>
+                        <p>We develop a comprehensive plan that outlines the approach, timeline, and deliverables for your project.</p>
+                    </div>
+
+                    <div class="process-item" data-animate="fadeInUp">
+                        <div class="process-number">03</div>
+                        <h4 data-lang="process_design">Design</h4>
+                        <p>Our creative team brings your vision to life with stunning designs that align with your brand identity.</p>
+                    </div>
+
+                    <div class="process-item" data-animate="fadeInUp">
+                        <div class="process-number">04</div>
+                        <h4 data-lang="process_development">Development</h4>
+                        <p>We build robust, scalable solutions using the latest technologies and best practices.</p>
+                    </div>
+
+                    <div class="process-item" data-animate="fadeInUp">
+                        <div class="process-number">05</div>
+                        <h4 data-lang="process_testing">Testing</h4>
+                        <p>Rigorous quality assurance ensures your project is pixel-perfect and functions flawlessly across all devices.</p>
+                    </div>
+
+                    <div class="process-item" data-animate="fadeInUp">
+                        <div class="process-number">06</div>
+                        <h4>Launch & Support</h4>
+                        <p>We deploy your project and provide ongoing support to ensure continued success.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header" data-animate="fadeInUp">
+                    <h2 data-lang="services_pricing">Pricing Plans</h2>
+                    <p data-lang="services_pricing_subtitle">Transparent pricing structures designed to fit your budget and project requirements.</p>
+                </div>
+
+                <div class="pricing-grid">
+                    <div class="pricing-card" data-animate="fadeInUp">
+                        <h3 data-lang="pricing_starter">Starter</h3>
+                        <div class="pricing-price">$2,500<span data-lang="pricing_perProject">/project</span></div>
+                        <ul class="pricing-features">
+                            <li>
+                                <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                                5 Page Website
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                                Responsive Design
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                                Basic SEO Setup
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                                Contact Form
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                                2 Weeks Delivery
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                                Email Support
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline"><span data-lang="pricing_getStarted">Get Started</span></a>
+                    </div>
+
+                    <div class="pricing-card featured" data-animate="fadeInUp">
+                        <span class="pricing-badge" data-lang="pricing_mostPopular">Most Popular</span>
+                        <h3 data-lang="pricing_professional">Professional</h3>
+                        <div class="pricing-price">$5,000<span data-lang="pricing_perProject">/project</span></div>
+                        <ul class="pricing-features">
+                            <li>
+                                <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                                10 Page Website
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                                Custom Design
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                                Advanced SEO
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                                CMS Integration
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                                Analytics Setup
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                                1 Month Support
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary"><span data-lang="pricing_getStarted">Get Started</span></a>
+                    </div>
+
+                    <div class="pricing-card" data-animate="fadeInUp">
+                        <h3 data-lang="pricing_enterprise">Enterprise</h3>
+                        <div class="pricing-price">$10,000<span data-lang="pricing_perProject">/project</span></div>
+                        <ul class="pricing-features">
+                            <li>
+                                <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                                Unlimited Pages
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                                E-commerce Ready
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                                Full SEO Package
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                                Custom Features
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                                Priority Support
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                                3 Months Support
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline"><span data-lang="pricing_getStarted">Get Started</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section section-dark">
+            <div class="container">
+                <div class="section-header" data-animate="fadeInUp">
+                    <h2 data-lang="services_faq">Frequently Asked Questions</h2>
+                    <p data-lang="services_faq_subtitle">Find answers to common questions about our services and process.</p>
+                </div>
+
+                <div class="faq-container">
+                    <div class="faq-item" data-animate="fadeInUp">
+                        <button class="faq-question">
+                            <span data-lang="faq_duration">How long does a typical project take?</span>
+                            <svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Project timelines vary based on scope and complexity. A standard website typically takes 4-8 weeks, while more complex projects can take 3-6 months. We'll provide a detailed timeline during the discovery phase.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-animate="fadeInUp">
+                        <button class="faq-question">
+                            <span data-lang="faq_packages">What's included in your web design packages?</span>
+                            <svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Our packages include custom design, responsive development, basic SEO optimization, contact forms, and post-launch support. Higher-tier packages include additional features like CMS integration, e-commerce functionality, and extended support periods.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-animate="fadeInUp">
+                        <button class="faq-question">
+                            <span data-lang="faq_maintenance">Do you offer ongoing maintenance and support?</span>
+                            <svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes! We offer various maintenance plans to keep your website secure, updated, and performing optimally. Our plans include security updates, backups, performance monitoring, and content updates.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-animate="fadeInUp">
+                        <button class="faq-question">
+                            <span data-lang="faq_guidelines">Can you work with existing brand guidelines?</span>
+                            <svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutely. We can adapt our design process to work within your existing brand framework or help you develop new brand guidelines if needed. We believe in flexibility to meet your specific requirements.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-animate="fadeInUp">
+                        <button class="faq-question">
+                            <span data-lang="faq_payment">What's your payment structure?</span>
+                            <svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We typically require a 50% deposit to begin work, with the remaining 50% due upon project completion. For larger projects, we can arrange milestone-based payments. We accept bank transfers, credit cards, and PayPal.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-animate="fadeInUp">
+                        <button class="faq-question">
+                            <span data-lang="faq_hosting">Do you provide hosting services?</span>
+                            <svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, we offer reliable hosting solutions optimized for speed and security. We also provide domain registration services and can help you choose the best hosting plan for your specific needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section">
+            <div class="container">
+                <div class="cta-section" data-animate="scaleIn">
+                    <h2 data-lang="services_cta">Ready to Get Started?</h2>
+                    <p><span data-lang="services_cta_desc">Let's discuss your project and create a custom solution that meets your unique needs and goals.</span></p>
+                    <a href="contact.html" class="btn"><span data-lang="services_cta_btn">Request a Quote</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>Creative<span style="color: var(--primary-color);">.</span></h3>
+                    <p><span data-lang="footer_about">We're a passionate team of designers, developers, and strategists dedicated to creating exceptional digital experiences that drive results.</span></p>
+                    <div class="footer-social">
+                        <a href="#"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+                        <a href="#"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg></a>
+                        <a href="#"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+                        <a href="#"><svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 data-lang="footer_quickLinks">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><span data-lang="footer_home">Home</span></a></li>
+                        <li><a href="about.html"><span data-lang="footer_aboutUs">About Us</span></a></li>
+                        <li><a href="services.html"><span data-lang="nav_services">Services</span></a></li>
+                        <li><a href="portfolio.html"><span data-lang="nav_portfolio">Portfolio</span></a></li>
+                        <li><a href="blog.html"><span data-lang="nav_blog">Blog</span></a></li>
+                        <li><a href="contact.html"><span data-lang="nav_contact">Contact</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 data-lang="footer_services">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html"><span data-lang="service_webDesign_title">Web Design</span></a></li>
+                        <li><a href="services.html"><span data-lang="service_branding_title">Branding</span></a></li>
+                        <li><a href="services.html"><span data-lang="service_marketing_title">Marketing</span></a></li>
+                        <li><a href="services.html"><span data-lang="service_seo_title">SEO</span></a></li>
+                        <li><a href="services.html"><span data-lang="service_mobileApps_title">Mobile Apps</span></a></li>
+                        <li><a href="services.html"><span data-lang="service_uiux_title">UI/UX</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 data-lang="footer_contactInfo">Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span><span data-lang="footer_address">123 Creative Street</span><br><span data-lang="footer_address2">San Francisco, CA 94102</span></span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+                            <span>hello@creativeagency.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p><span data-lang="footer_copyright">&copy; 2024 Creative Digital Agency. All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" data-lang-aria="scroll_top" aria-label="Scroll to top">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+        </svg>
+    </button>
+
+    <!-- Scripts -->
+    <script src="assets/js/language.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/darkmode.js"></script>
+    <script src="assets/js/animations.js"></script>
+</body>
+</html>

@@ -1,0 +1,412 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our portfolio of digital projects - web design, branding, marketing, and development work for clients worldwide.">
+    <meta name="keywords" content="portfolio, web design, branding, marketing, development, case studies">
+    <title>Portfolio - Creative Digital Agency</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/hero-sections.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                Creative<span class="logo-dot">.</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav-links">
+                <a href="index.html" data-lang="nav_home">Home</a>
+                <a href="about.html" data-lang="nav_about">About</a>
+                <a href="services.html" data-lang="nav_services">Services</a>
+                <a href="portfolio.html" class="active" data-lang="nav_portfolio">Portfolio</a>
+                <a href="blog.html" data-lang="nav_blog">Blog</a>
+                <a href="contact.html" data-lang="nav_contact">Contact</a>
+            </nav>
+
+            <div class="nav-right">
+              <button id="language-toggle" class="language-btn" data-language-toggle aria-label="Toggle language">
+                        EN
+              </button>
+                <button class="theme-toggle" data-lang-aria="toggle_dark_mode" aria-label="Toggle dark mode">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/>
+                        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+                    </svg>
+                </button>
+
+                <a href="contact.html" class="btn btn-primary btn-sm desktop-only" data-lang="nav_getStarted">
+                    Get Started
+                </a>
+
+                <button class="hamburger" data-lang-aria="open_menu" aria-label="Toggle menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="nav-overlay"></div>
+    <nav class="mobile-nav-drawer">
+        <div class="mobile-nav-header">
+            <a href="index.html" class="mobile-logo">
+                Creative<span class="logo-dot">.</span>
+            </a>
+            <button class="mobile-nav-close" data-lang-aria="close_menu" aria-label="Close menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-nav-links">
+            <a href="index.html" data-lang="nav_home">Home</a>
+            <a href="about.html" data-lang="nav_about">About</a>
+            <a href="services.html" data-lang="nav_services">Services</a>
+            <a href="portfolio.html" class="active" data-lang="nav_portfolio">Portfolio</a>
+            <a href="blog.html" data-lang="nav_blog">Blog</a>
+            <a href="contact.html" data-lang="nav_contact">Contact</a>
+        </div>
+        <div class="mobile-nav-footer">
+            <a href="contact.html" class="btn btn-primary" data-lang="nav_getStarted">Get Started</a>
+            <button type="button" data-language-toggle class="language-btn language-btn-mobile">EN</button>
+        </div>
+    </nav>
+
+
+    <main>
+        <!-- Page Hero - Portfolio: Asymmetric Bento Grid Showcase -->
+        <section class="page-hero hero-portfolio">
+            <div class="hero-bg-noise"></div>
+            <div class="hero-portfolio-bg-gradient"></div>
+
+            <div class="container">
+                <div class="hero-portfolio-wrapper">
+                    <div class="hero-portfolio-text">
+                        <span class="hero-badge" data-animate="fadeInUp">
+                            <span class="hero-badge-dot"></span>
+                            <span data-lang="portfolio_hero_badge">Selected Work</span>
+                        </span>
+                        <h1 class="hero-portfolio-title" data-animate="fadeInUp">
+                            <span data-lang="portfolio_hero_title1">Brands We've</span>
+                            <span class="title-gradient" data-lang="portfolio_hero_title2">Brought to Life</span>
+                        </h1>
+                        <p class="hero-portfolio-subtitle" data-animate="fadeInUp" data-lang="portfolio_hero_subtitle">
+                            250+ projects, 50+ industries, one obsession: shipping work that earns attention, drives results, and stands the test of time.
+                        </p>
+                        <div class="hero-portfolio-cta" data-animate="fadeInUp">
+                            <a href="#portfolio-grid" class="btn btn-primary btn-glow" data-lang="portfolio_hero_cta1">View Case Studies</a>
+                            <a href="contact.html" class="btn-link btn-link-light" data-lang="portfolio_hero_cta2">
+                                Start Your Project
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="hero-portfolio-tags" data-animate="fadeInUp">
+                            <span class="hero-tag" data-lang="portfolio_tag_1">Web Design</span>
+                            <span class="hero-tag" data-lang="portfolio_tag_2">Branding</span>
+                            <span class="hero-tag" data-lang="portfolio_tag_3">Marketing</span>
+                            <span class="hero-tag" data-lang="portfolio_tag_4">Development</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-portfolio-bento" data-animate="fadeInUp">
+                        <div class="bento-item bento-item-large">
+                            <div class="bento-bg bento-bg-gradient-1"></div>
+                            <div class="bento-content">
+                                <div class="bento-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                    </svg>
+                                </div>
+                                <div class="bento-number">250+</div>
+                                <div class="bento-label" data-lang="portfolio_bento_1">Projects Shipped</div>
+                            </div>
+                        </div>
+                        <div class="bento-item bento-item-small">
+                            <div class="bento-bg bento-bg-gradient-2"></div>
+                            <div class="bento-content">
+                                <div class="bento-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                </div>
+                                <div class="bento-number">15+</div>
+                                <div class="bento-label" data-lang="portfolio_bento_2">Countries</div>
+                            </div>
+                        </div>
+                        <div class="bento-item bento-item-small">
+                            <div class="bento-bg bento-bg-gradient-3"></div>
+                            <div class="bento-content">
+                                <div class="bento-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 2v20M2 12h20"/>
+                                    </svg>
+                                </div>
+                                <div class="bento-number">98%</div>
+                                <div class="bento-label" data-lang="portfolio_bento_3">Client Retention</div>
+                            </div>
+                        </div>
+                        <div class="bento-item bento-item-wide">
+                            <div class="bento-bg bento-bg-gradient-4"></div>
+                            <div class="bento-content bento-content-row">
+                                <div>
+                                    <div class="bento-number-large">Awwwards</div>
+                                    <div class="bento-label" data-lang="portfolio_bento_4">12 Industry Awards</div>
+                                </div>
+                                <div class="bento-trophy">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M6 9H4.5a2.5 2.5 0 010-5H6M18 9h1.5a2.5 2.5 0 000-5H18M4 22h16M10 22V11M14 22V11M5 9c0 4 3 7 7 7s7-3 7-7"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="section">
+            <div class="container">
+                <!-- Filter Buttons -->
+                <div class="filter-buttons" data-animate="fadeInUp">
+                    <button class="filter-btn active" data-filter="all" data-lang="portfolio_filter_all">All</button>
+                    <button class="filter-btn" data-filter="web-design" data-lang="portfolio_filter_webDesign">Web Design</button>
+                    <button class="filter-btn" data-filter="branding" data-lang="portfolio_filter_branding">Branding</button>
+                    <button class="filter-btn" data-filter="marketing" data-lang="portfolio_filter_marketing">Marketing</button>
+                    <button class="filter-btn" data-filter="development" data-lang="portfolio_filter_development">Development</button>
+                </div>
+
+                <!-- Portfolio Grid -->
+                <div class="portfolio-grid">
+                    <div class="portfolio-item" data-category="web-design" data-animate="scaleIn">
+                        <img src="assets/images/Gemini_Generated_Image_7v4gsl7v4gsl7v4g (3).png" alt="E-commerce Platform">
+                        <div class="portfolio-overlay">
+                            <h4>E-commerce Platform</h4>
+                            <span data-lang="portfolio_filter_webDesign">Web Design</span>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="branding" data-animate="scaleIn">
+                        <img src="assets/images/Gemini_Generated_Image_7v4gsl7v4gsl7v4g (2).png" alt="Tech Startup Brand">
+                        <div class="portfolio-overlay">
+                            <h4>Tech Startup Brand</h4>
+                            <span data-lang="portfolio_filter_branding">Branding</span>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="marketing" data-animate="scaleIn">
+                        <img src="assets/images/Gemini_Generated_Image_7v4gsl7v4gsl7v4g (4).png" alt="Social Campaign">
+                        <div class="portfolio-overlay">
+                            <h4>Social Campaign</h4>
+                            <span data-lang="portfolio_filter_marketing">Marketing</span>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="development" data-animate="scaleIn">
+                        <img src="assets/images/Gemini_Generated_Image_7v4gsl7v4gsl7v4g (5).png" alt="SaaS Dashboard">
+                        <div class="portfolio-overlay">
+                            <h4>SaaS Dashboard</h4>
+                            <span data-lang="portfolio_filter_development">Development</span>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="web-design" data-animate="scaleIn">
+                        <img src="assets/images/Gemini_Generated_Image_7v4gsl7v4gsl7v4g (1).png" alt="Restaurant Website">
+                        <div class="portfolio-overlay">
+                            <h4>Restaurant Website</h4>
+                            <span data-lang="portfolio_filter_webDesign">Web Design</span>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="branding" data-animate="scaleIn">
+                        <img src="assets/images/Gemini_Generated_Image_7v4gsl7v4gsl7v4g.png" alt="Fashion Brand Identity">
+                        <div class="portfolio-overlay">
+                            <h4>Fashion Brand Identity</h4>
+                            <span data-lang="portfolio_filter_branding">Branding</span>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="marketing" data-animate="scaleIn">
+                        <img src="assets/images/Gemini_Generated_Image_e980p0e980p0e980.png" alt="Product Launch">
+                        <div class="portfolio-overlay">
+                            <h4>Product Launch</h4>
+                            <span data-lang="portfolio_filter_marketing">Marketing</span>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="development" data-animate="scaleIn">
+                        <img src="assets/images/Gemini_Generated_Image_gkxbfgkxbfgkxbfg.png" alt="Mobile App">
+                        <div class="portfolio-overlay">
+                            <h4>Mobile App</h4>
+                            <span data-lang="portfolio_filter_development">Development</span>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="web-design" data-animate="scaleIn">
+                        <img src="assets/images/Gemini_Generated_Image_2am5qk2am5qk2am5.png" alt="Real Estate Website">
+                        <div class="portfolio-overlay">
+                            <h4>Real Estate Website</h4>
+                            <span data-lang="portfolio_filter_webDesign">Web Design</span>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="branding" data-animate="scaleIn">
+                        <img src="assets/images/Gemini_Generated_Image_3y6it63y6it63y6i.png" alt="Coffee Shop Branding">
+                        <div class="portfolio-overlay">
+                            <h4>Coffee Shop Branding</h4>
+                            <span data-lang="portfolio_filter_branding">Branding</span>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="marketing" data-animate="scaleIn">
+                        <img src="assets/images/Gemini_Generated_Image_7v4gsl7v4gsl7v4g (3).png" alt="Email Campaign">
+                        <div class="portfolio-overlay">
+                            <h4>Email Campaign</h4>
+                            <span data-lang="portfolio_filter_marketing">Marketing</span>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="development" data-animate="scaleIn">
+                        <img src="assets/images/Gemini_Generated_Image_7v4gsl7v4gsl7v4g (2).png" alt="Booking Platform">
+                        <div class="portfolio-overlay">
+                            <h4>Booking Platform</h4>
+                            <span data-lang="portfolio_filter_development">Development</span>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="web-design" data-animate="scaleIn">
+                        <img src="assets/images/Gemini_Generated_Image_7v4gsl7v4gsl7v4g (4).png" alt="Fitness Studio">
+                        <div class="portfolio-overlay">
+                            <h4>Fitness Studio</h4>
+                            <span data-lang="portfolio_filter_webDesign">Web Design</span>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="branding" data-animate="scaleIn">
+                        <img src="assets/images/Gemini_Generated_Image_7v4gsl7v4gsl7v4g (5).png" alt="Wellness Brand">
+                        <div class="portfolio-overlay">
+                            <h4>Wellness Brand</h4>
+                            <span data-lang="portfolio_filter_branding">Branding</span>
+                        </div>
+                    </div>
+                
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section">
+            <div class="container">
+                <div class="cta-section" data-animate="scaleIn">
+                    <h2 data-lang="cta_project_mind">Have a Project in Mind?</h2>
+                    <p><span data-lang="cta_project_mind_desc">Let's collaborate and create something extraordinary together. Your vision + our expertise = success.</span></p>
+                    <a href="contact.html" class="btn"><span data-lang="hero_btn_project">Start Your Project</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>Creative<span style="color: var(--primary-color);">.</span></h3>
+                    <p><span data-lang="footer_about">We're a passionate team of designers, developers, and strategists dedicated to creating exceptional digital experiences that drive results.</span></p>
+                    <div class="footer-social">
+                        <a href="#"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+                        <a href="#"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg></a>
+                        <a href="#"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+                        <a href="#"><svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 data-lang="footer_quickLinks">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><span data-lang="footer_home">Home</span></a></li>
+                        <li><a href="about.html"><span data-lang="footer_aboutUs">About Us</span></a></li>
+                        <li><a href="services.html"><span data-lang="nav_services">Services</span></a></li>
+                        <li><a href="portfolio.html"><span data-lang="nav_portfolio">Portfolio</span></a></li>
+                        <li><a href="blog.html"><span data-lang="nav_blog">Blog</span></a></li>
+                        <li><a href="contact.html"><span data-lang="nav_contact">Contact</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 data-lang="footer_services">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html"><span data-lang="service_webDesign_title">Web Design</span></a></li>
+                        <li><a href="services.html"><span data-lang="service_branding_title">Branding</span></a></li>
+                        <li><a href="services.html"><span data-lang="service_marketing_title">Marketing</span></a></li>
+                        <li><a href="services.html"><span data-lang="service_seo_title">SEO</span></a></li>
+                        <li><a href="services.html"><span data-lang="service_mobileApps_title">Mobile Apps</span></a></li>
+                        <li><a href="services.html"><span data-lang="service_uiux_title">UI/UX</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 data-lang="footer_contactInfo">Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span><span data-lang="footer_address">123 Creative Street</span><br><span data-lang="footer_address2">San Francisco, CA 94102</span></span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+                            <span>hello@creativeagency.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p><span data-lang="footer_copyright">&copy; 2024 Creative Digital Agency. All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" data-lang-aria="scroll_top" aria-label="Scroll to top">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+        </svg>
+    </button>
+
+    <!-- Scripts -->
+    <script src="assets/js/language.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/darkmode.js"></script>
+    <script src="assets/js/portfolio.js"></script>
+    <script src="assets/js/animations.js"></script>
+</body>
+</html>
